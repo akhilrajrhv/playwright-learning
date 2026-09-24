@@ -18,5 +18,5 @@ test("Dropdown test",async({page})=>{
     expect(selected_color_text).toContain(color)//assertion to check the selected color is same as the input value
     //expect(selected_color_text).tohaveText(color)//assertion to check the selected color is same as the input value
     //expect(selected_color_text).toContain("Selected Color : "+color)
-    await page.pause()
+    //await page.pause()
 })

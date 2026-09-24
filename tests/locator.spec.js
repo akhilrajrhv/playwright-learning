@@ -12,7 +12,7 @@ test("Input form test", async({page})=>{
     //await page.pause()
 })
 
-test.only("Check box test", async({page})=>{
+test("Check box test", async({page})=>{
     await page.goto("https://selenium.qabible.in/")
     await page.locator(".nav-link").nth(1).click()
     //await page.locator("[href='check-box-demo.php']").click()
@@ -27,9 +27,9 @@ test.only("Check box test", async({page})=>{
     await checkbox.uncheck()
     const ischeck_false=await checkbox.isChecked()
     console.log("Is checkbox checked: "+ischeck_false)
-    await expect(ischeck_false).toBeFalsy()// test pass if the checkbox is unchecked
+    expect(ischeck_false).toBeFalsy()// test pass if the checkbox is unchecked
     //await expect(checkbox).not.toBeChecked() //assertion to check the checkbox is not checked
     //await expect(checkbox).toBeChecked()//this asswertion showing error becuase the checkbox is unchecked on the above line
-    await page.pause()
+    //await page.pause()
 })
 

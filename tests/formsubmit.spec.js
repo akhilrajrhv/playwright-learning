@@ -42,5 +42,5 @@ test("Form Submit test",async({page})=>{
     //await expect(success_message).toBeVisible() //assertion checked with message locator
     //await expect(success_message).not.toBeVisible()
    
-    await page.pause()
+    //await page.pause()
 })

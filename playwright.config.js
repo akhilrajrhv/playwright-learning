@@ -22,9 +22,11 @@ export default defineConfig({
    timeout:60*1000,
   },
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  use: {
-    headless:false
-  },
+ use: {
+  headless: false,
+  //video: 'on',
+  //trace: 'on'
+},
 
 
   /* Run your local dev server before starting the tests */

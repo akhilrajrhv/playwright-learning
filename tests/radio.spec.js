@@ -9,7 +9,7 @@ test("Radio button test", async({page})=>{
     const radio_button=page.getByRole("radio",{name:"Male"}).first()//find locator using getbyrole
     await radio_button.click()
     const value=await radio_button.isChecked()
-    await expect(value).toBe(true)
+    expect(value).toBe(true)
     await expect(radio_button).toBeChecked()
-    await page.pause()
+    //await page.pause()
 })
