@@ -9,7 +9,8 @@
     "ui_mode": "npx playwright test --ui",
     "debug": "npx playwright test --debug",
     "config": "npx playwright test --config=playwright.config_temp.js",
-    "config_chrome": "npx playwright test --config=playwright.config_temp.js --project=Chrome_Project"
+    "config_chrome": "npx playwright test --config=playwright.config_temp.js --project=Chrome_Project",
+    "smoke_test": "npx playwright test --grep @smoke"
   },
   "keywords": [],
   "author": "",
